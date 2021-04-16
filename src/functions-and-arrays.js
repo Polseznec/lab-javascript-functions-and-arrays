@@ -125,11 +125,21 @@ function uniquifyArray(list){
 // Iteration #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 
-function doesWordExist (list){
-  if(list.length === 0)
-  return null;
-  
+function doesWordExist(arr, word) {
+  if (arr.length === 0) return null;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr.includes(word)) {
+      return true;
+
+         
+    } else {
+
+
+      return false;
+    }
+  }
 }
+
 
 // Iteration #7: Count repetition
 const wordsCount = [
@@ -145,6 +155,7 @@ const wordsCount = [
   'disobedience',
   'matter'
 ];
+
 
 // Iteration #8: Bonus
 
